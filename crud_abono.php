@@ -1,5 +1,5 @@
 <?php 
-require_once("conexion.php");
+require_once("conexion.php");//Comprobacion de cambios
 class Abono extends Conexion{
 	public function alta() {
 		$id_abono=$_POST["id_abono"];
