@@ -15,15 +15,14 @@ if(!isset($_POST['idM'])){
 <input type="text" name="cu_pedido"><br>
 <label>Fecha</label>
 <input type="date" name="cu_fecha"><br>
-<input type="submit" name="Alta" value="Agregar">
-<a href="vistaModificarCuenta.php">Modificar</a>		
+<input type="submit" name="Modificar" value="Modificar">	
 </form>
 
 <?php
 }
-if(isset($_POST['Alta'])){
-$obj->alta();
-echo"<h4> Cuenta agregada</h4>";
+if(isset($_POST['Modificar'])){
+$obj->modificar();
+echo"<h4>Modificacion exitosa</h4>";
 
 
 }

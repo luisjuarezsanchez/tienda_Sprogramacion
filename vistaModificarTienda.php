@@ -10,17 +10,15 @@ if(!isset($_POST['idM'])){
 <label>Ubicacion</label>
 <input type="text" name="ti_ubi"><br>
 
-<input type="submit" name="Alta" value="Agregar">
-<a href="vistaModificarTienda.php">Modificar</a>		
+<input type="submit" name="Modificar" value="Modificar">		
 
 </form>
 <?php
 }
-if(isset($_POST['Alta'])){
-$obj->alta();
-echo"<h4> Abono agregado</h4>";
+if(isset($_POST['Modificar'])){
+$obj->modificar();
+echo"<h4>Modificacion exitosa</h4>";
 
 
 }
   ?>
-
